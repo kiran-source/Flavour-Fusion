@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flavour Fusion - Organic Foods</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+          <div style="display: flex; align-items: center;">
+            <img src="./img/logo.png" alt="Logo" class="logo-img">
+            <div class="brand">Flavour Fusion</div>
+          </div>
+          
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipies.html">Recipes</a></li>
+            <li><a href="products1.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        </div>
+    </header>
+    
+
+    <!-- Cart icon moved outside of header -->
+    <div class="cart-container">
+        <div class="cart-icon" onclick="showSection('cart')">
+            🛒 Cart <span class="cart-count" id="cartCount">0</span>
+        </div>
+    </div>
+
+    <main class="container">
+        <!-- Products Section -->
+        <section id="products" class="section active">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="section">
+            <h2>Shopping Cart</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total" id="cartTotal">Total: $0.00</div>
+            <button class="btn btn-primary" onclick="showSection('checkout')" id="checkoutBtn" style="display: none;">
+                Proceed to Checkout
+            </button>
+            <button class="btn btn-secondary" onclick="showSection('products')">
+                Continue Shopping
+            </button>
+        </section>
+
+        <!-- Checkout Section -->
+        <section id="checkout" class="section">
+            <h2>Checkout</h2>
+            <form class="checkout-form" id="checkoutForm">
+                <!-- Shipping Address -->
+                <div class="form-section">
+                    <h3>📍 Shipping Address</h3>
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" name="fullName" required>
+                        <div class="error-message">Please enter your full name</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Address Line 1 *</label>
+                        <input type="text" name="address1" required>
+                        <div class="error-message">Please enter your address</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Address Line 2</label>
+                        <input type="text" name="address2">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>City *</label>
+                            <input type="text" name="city" required>
+                            <div class="error-message">Please enter your city</div>
+                        </div>
+                        <div class="form-group">
+                            <label>State/Province *</label>
+                            <input type="text" name="state" required>
+                            <div class="error-message">Please enter your state</div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>ZIP/Postal Code *</label>
+                            <input type="text" name="zipCode" required>
+                            <div class="error-message">Please enter your ZIP code</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Country *</label>
+                            <select name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="AU">Australia</option>
+                                <option value="DE">Germany</option>
+                                <option value="FR">France</option>
+                                <option value="JP">Japan</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message">Please select your country</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="form-section">
+                    <h3>📞 Contact Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" name="email" required>
+                            <div class="error-message">Please enter a valid email</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" name="phone" required>
+                            <div class="error-message">Please enter your phone number</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <div class="form-section">
+                    <h3>💳 Payment Method</h3>
+                    <div class="payment-options">
+                        <div class="payment-option" onclick="selectPayment('credit')">
+                            <input type="radio" name="paymentMethod" value="credit" id="credit" required>
+                            <div>💳 Credit Card</div>
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('debit')">
+                            <input type="radio" name="paymentMethod" value="debit" id="debit">
+                            <div>💳 Debit Card</div>
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('paypal')">
+                            <input type="radio" name="paymentMethod" value="paypal" id="paypal">
+                            <div>🔵 PayPal</div>
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('apple')">
+                            <input type="radio" name="paymentMethod" value="apple" id="apple">
+                            <div>📱 Apple Pay</div>
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('google')">
+                            <input type="radio" name="paymentMethod" value="google" id="google">
+                            <div>🔍 Google Pay</div>
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('crypto')">
+                            <input type="radio" name="paymentMethod" value="crypto" id="crypto">
+                            <div>₿ Cryptocurrency</div>
+                        </div>
+                    </div>
+                    <div class="error-message" id="paymentError" style="display: none;">Please select a payment method</div>
+
+                    <!-- Card Details -->
+                    <div id="cardDetails" style="display: none; margin-top: 1rem;">
+                        <div class="form-group">
+                            <label>Card Number *</label>
+                            <input type="text" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                            <div class="error-message">Please enter a valid card number</div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Expiry Date *</label>
+                                <input type="text" name="expiryDate" placeholder="MM/YY" maxlength="5">
+                                <div class="error-message">Please enter expiry date (MM/YY)</div>
+                            </div>
+                            <div class="form-group">
+                                <label>CVV *</label>
+                                <input type="text" name="cvv" placeholder="123" maxlength="4">
+                                <div class="error-message">Please enter CVV</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Cardholder Name *</label>
+                            <input type="text" name="cardName">
+                            <div class="error-message">Please enter cardholder name</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="form-section">
+                    <h3>📦 Order Summary</h3>
+                    <div id="orderSummary"></div>
+                    <div class="cart-total" id="checkoutTotal">Total: $0.00</div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Place Order 🚀</button>
+                <button type="button" class="btn btn-secondary" onclick="showSection('cart')">Back to Cart</button>
+            </form>
+        </section>
+
+        <!-- Success Section -->
+        <section id="success" class="section">
+            <div class="success-message">
+                <h2>🎉 Order Placed Successfully!</h2>
+                <p>Thank you for your purchase. Your order has been confirmed.</p>
+                <div class="order-details" id="orderConfirmation">
+                    <!-- Order details will be shown here -->
+                </div>
+                <button class="btn btn-primary" onclick="startOver()">Start New Order</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

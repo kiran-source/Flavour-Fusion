@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Flavour Fusion</title>
+  <style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    margin-right: 10px;
+  }
+  
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin-left: 20px;
+  }
+  
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-list a:hover {
+    color: #dfffdc;
+  }
+    .section {
+      display: flex;
+      align-items: center;
+      padding: 60px 10%;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+      background: #f4f9f4;
+    }
+    .section img {
+      width: 350px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .section .content {
+      flex: 1;
+    }
+    .section .content h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2d5b2c;
+    }
+    .section .content p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .team, .values, .testimonials {
+      padding: 60px 10%;
+      text-align: center;
+      background: #fefdf8;
+    }
+    .team h2, .values h2, .testimonials h2 {
+      font-size: 2.5em;
+      color: #3a7d44;
+      margin-bottom: 30px;
+    }
+    .team-members {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .member {
+      text-align: center;
+      max-width: 160px;
+    }
+    .member img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3a7d44;
+    }
+    .member h4 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+    }
+    .member p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .values ul {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .testimonials .review {
+      background: #ffffff;
+      padding: 25px;
+      margin: 20px auto;
+      border-radius: 12px;
+      max-width: 700px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .review p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .review h4 {
+      margin: 0;
+      font-weight: bold;
+      color: #3a7d44;
+    }
+
+    .cta {
+      padding: 60px 10%;
+      background: #3a7d44;
+      color: white;
+      text-align: center;
+    }
+    .cta h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    .cta p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    .cta a {
+      padding: 12px 25px;
+      background: white;
+      color: #3a7d44;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #e2f4e3;
+    }
+
+    footer {
+      background: #2d5b2c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media(max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .section:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+        <div class="navbar">
+          <div style="display: flex; align-items: center;">
+            <img src="./img/logo.png" alt="Logo" class="logo-img">
+            <div class="brand">Flavour Fusion</div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipies.html">Recipes</a></li>
+            <li><a href="products1.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+  <h2>About Flavour Fusion</h2>
+
+  <div class="section">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Fresh food">
+    <div class="content">
+      <h2>Who We Are</h2>
+      <p>Flavour Fusion is your destination for premium organic food, wholesome recipes, and a healthier lifestyle. We're dedicated to delivering fresh, sustainable, and flavorful products that connect people with real food.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhIVFhUVFRcYFRUXFRUVFxUVFRUXFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGy0mICUtKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYBBwj/xABDEAACAQIEAwUGAwUGBAcAAAABAgADEQQFEiExQVEGEyJhcQcygZGhsSNC0RRyssHwFSRSYnOCM1Nj8WR0kqKzwuH/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAqEQACAgIBAwMEAgMBAAAAAAAAAQIRAyExBBJBIlFhEzJx8BSBQpGhBf/aAAwDAQACEQMRAD8A8bSbTJiBWwjFNYbCEaN/FprOttpi6gszDoxHyM2WTViP2EjiaOITz2rsbjod9pZ7X77Ekqka/Cphnb8Oo+Hfo1yt+mobj4zUZSlYg0q5Dqd6dZSDpPQ8wOh6zLYLFF/AxSr0WoumoPIN/wDs0WWZI3FDUok8idSmclHqSaoPYDGkEq+zpsb/AJh1/WaHK8QCNN7jinpzX1EBnDooTvaq96v5thq8iJJRzOkGA7wA3uOgP6GOotHLNxZp4pHRqhhcSSMSFOzk7MYUUUUxjjCeKdoU/Fb98/cz2yeLdoTeqf3j9zOjB5I5fB6HeMkvKMI8pFjjYiJ3SOkWgQGFpiKzumdtMY4BHARWimMOWAPZphVZswLKDfFEbgHgD19ZoEgn2W+7jT1xbfwiLJXph8o0FTIsK/v4ekf9iyq3Y7BXDLR0MNwVZlI9LGH2G95ETc+UTsivA/fJeTKV/Z9hnYnXVBJuTqDXJ9RCmX5AMMtg5YDqBf6QwNje/wAJFiG5Q44RT0gyyykqbKjMBxmazPNkpllvLnaKsQoA4kzJ9osrPcd6T4gB9eMOWTXBTBijLk42bhr6TJqLsw3MwvZ2sWqlSec9BXwqJFSvYckO10V6i6RKqJe8vtR1Ti0bTEwQyG8UKGmIpjHhOOINaoVBCmo5A4kKWNgfO02vZrLXqpg2T3UbEhieQJUj7wTg8k14mooHh1sCrcQOI3mw/ahQorQp7ab3PmwF/tOpzSSJdjcmFBjqeGXSlmfmx338gZHTzmqTcuZmnrXNukkOL3ESKLSdh6pj2ZrsSfUwhhK9xM5Sq3Eu4PE2l4kmbrIc2aibbsh4joPKbihWV1DKbg8DPK8txdjY8DNDluNaiwIO1/EORH6wSVsy4NwIpxWuLjnOyQRRTtpyYwp4rny2qn94/cz2sTxftEfxz++fuZ0YPJHL4PRNOwjCvrJOXoJlMb23o06ujSSL2ZgQbfAXv8JEokzT6fMxafOZPDe0DCM+hm072Db6fibbTWI1wCLHmDfrABo7pnbTqzpmCNtEBHRGYx1YH9lZ/Dxf/m3/AIVhhIJ9lY/AxB64up/CkWRlyjb8RtIO7PKTc45jYTcjNFalY+onMSlyIlAU+ZkPeXqEdIYioGYzLdTi++8zna02R05ACarNcUE9eUyXao6aDu3Egn9Iubg6+m+5NnlnZ2vbFGemURrt0nlWRKTWLec9RyzE+GcsH4LZ427L9UACVa72khqQVmVe2wlDm7TjYreKC9LTsw3YVkwYpmtUBuWI3+AgTFV9yZou0bCkvdi4ub+IWPDmJjcXVjXbJrgmo1OfWJ6kq0SZKu8shWX8LXhOgb/CZulWsYdwdbh5yt0LVhvC1ZqcI+tPPlMcKlrGaPLq3hBESUgqJtMjzQ20EX28PnblLGIzZhv3FX1vt6mxmfSqV0uORBmtQh1DDgwv85NzfhWHsXllalnikA93U4cQtx8N5J/bVPmtQf7DJEp22HKSmKskvMQuC8Mhp5tSJ/N8Ub9J5T+yti8WVp8O8JPkLnc+U9bCzzDF4r+z8PVqC3f4h2CdVQEi/wA7y+LI9qic8abWxe0XtGVAwlA7v77A72vYJt1sSfK0BZPkYSxYam+0D9m6ZxGJZ3JOkX368BD+dtU1iyArtwZ1PDkVPXrJ5delHRhX+VEmZ9laNdCAmh7eFxyPK/US57KsdUahUo1iS1Coae++wOw+FiPS05Vxj0qdLSxJZrG6d4RYAkMLjhfjeL2ef8fF1FdWp1ajFbAqQUPiuDy8Q3BPGJjcq2bqO3xybwcI6dWJxtKnKcMQjrRWmCc5QR7KN8NWPXE1P4UhcjY+kA+y02wjn/xFT7KJPJKlYVybxo6228hVjfeS33gjJPYxTq7MTv5SFV8ZbrCVQ24wRiK2keseCptiJbBeZYumKh7w8BcTz3t7nJrAUkO3OGu0FW9QmZypRDNwkMmS7R6WGCjTBmR5fp3mkovpkdKjpEZUqWnM2Wqy++PFpRxGIBMp1LnhKtSm0ZZBHiRafMQDaKCHo78Zyb6gPphL2hZj3uMe3AbfIWmMxDXYCXcbiC9R3PMn7ytgMIXqXPAToizhS8FjD0vCTHsmlJdew2g/Ma1ljp2M1SKFJ94XwNXYeUBUjvCeX1LG0u3okkaGhUvtDmRV7ix5TNUDvDWXNpdTyMlJ6HRuMMbpaabJ7LTVARcLcjyNyJm8FsvqJrMms1NWIGoXW/OwPWLB2GfBSywN47uxu5Kk9Dvb7y9ob/F9Je0jpORvV7iXH2KuHYgm+/T+c8X9p9Q96q8lThx6z2HN8yWkjG/Af0J4B2szI1nd1BbfxG3DkOHARsd9wWl2sJ9h6yOXsullVQfPmTDuNrlRYN/XOx5TzzI8aadUMp8mA+s2lWitbS+xK8L726yWZes68DuIYyvEDug1QLZdT3G4UKtzY+kF+yWuajVX0hVCAIo4KC5O5PFjzPl5QN2wzNaFI0EJNaummoAfDTpnYkKNlZgLbcrk8r6b2U0lSiy/m8JPpbb63mgq/sl1DTf4N9faPtGqI5pY5BETlo604ZjDKnun0P2gT2WU/wC5nzr1PuIbr+437p+xg32W0/7gp/6tUj/1kRJpPk3k17bA25RiNc+YjwnHzjglovbbHOsL7EcRvMZ2ixmhyOQJE19WuBtznnHbV/xTaLOdaRXCk5AnMq+reR5fhS5lRWvNL2dpAmQ5Z23SKONoaRaD2ozU53hucz1LEKjDVwivG3KkFTSjbJ8HkzMNRFhK2Z0ETiZczbtUgXTT3Npgc3zVnJuZ3Q6BtbOOfXJcF98SlzvFMbUrm53ilf4UCH8+XsGKeG1seghMoKa2EgpMFAkOJxW5E4SyOVm8UEZhUJIEIYN9ZJ6SnWp3b0lI6ZnspMLS7S2YeYkKUtTHoJJVqbgjlK2ToM06tt5o8rcVF24zMFhpB5EQxkKkG6mTk9FEj0HK6twFPSbHJARSHS5tMdkyB7E7MPrNzl3hpqDxtNiFyPRaUnnBWaZ0tI6Rx4E8gekJVKmxtxtMJjm1u5G+5t6Dr9JRiRVljMcT33gIBB4rb79YBx+QU1pOEXckFltsVBBI6cocouDpJKgkD9OHrOZlRUo34mkWuePTkeUUazyHLskIrOo30nf0N7H6Qr2gqvSwhWmSKjsqAgkEXO9jyPL4zX9n8n3atzYjR+4t7XHneSY3sstWqjlvw0ZXKcywN7X5DYRXbaZaM4qLR4lXwtSlWZaty2r3iSSw4hiTvvtPWvZe6nvSDyAHoIUzXszTrC1VAzXIVrC5Ta6nzBO3lA+WdnzgMwprTY93VVjY8ipAI8wbgxpO2mR5TR6MseRGhdo5GuZQidM4Y5hOTGIMabU3P+VvsZS9lzWy9P36v/yNLWaf8Gp/pt/CYM9mJP7Ag6mr9ajSc3VBXJrXxdtrc+PKXFaV8MRpAPICSC19hvFha22MUswpsXBUE7AWgjMMgp4hgSGV9xseXnNMU3nAwUfOJKG7b0KrTtM8t7QdnjhqgCnUCLj5kfyljJK4pHxG0udtcyTvRZr6Utt1uSR9p51nGbsxIBtOnF0lpSYz6t1RuM37Q02BUG/pMLmGYXY8h0gvDYog7mVswxG952QhCCtHNPLKWmXKuLgbHVb8I1sReVKzxnOyVFdmMUReKJYaNK9awMD4jEEuBLuIey3lDL6et9XITyYs9NhfBIVHrKr7E7S+jby2ir+YXhTDRm8RidK2HPjGUXus1OM7O03W99JmcxOXtR2PDkZVS0LQTwp1Uh5Qv2eBvbzgHL3shE0uU7FTyNpOb0OkehZONItzHCBO2VaqKoKs+mwJALbHytNllWHGlSOYhnuDbcC0ph1sjld6POOxFVziCWNQKtKoQG1kG4tuSPPhNE6AAm25B+0L45goKjiw+lxeDMSbKfT7yk2DGCqoYMCpHDgf5GdOFesQHsEBuwvctblwFhEPFVP+VRf1Nz9rQgvCKkGT2XmwoYDTsRO4ek2kg8QeJ6cvXmJFhaxl6jUubdRCxDiXbY8fhAWcIHxlEXF1V2HXYr9LmX6+YJS8TsFAP9bQQ+YYeviA2lztZGto3LliRchultuF+MnOUVyyuPFOW4pmnpHYbSnUxFNWuxXZj+YCxHHa/LpKPaXOEoUtJO7dOIXmf5TF/t1KpcpVN9FS9xvudXA+h+UE8tcDY8HdtnqSuCLjcHcEcwZ0wVkWMBorqIAsNJv7y2BBPTe4+EJUMUj30MGtxsQbevSVi7VkJx7XRVzlvwKv+m/8Jg/2bG2Apnyqn4960v8AaE/3at/pP/CZB7PcGf2Cj0Kvf/c7RcngVcmly8DSCecnY9PnIgwAtbhtaRY7FpSpszGwAv8A9okFxEZsixubJTUl2sBt5n0Ew2d9p3qXCXVf/cfU8vSDc0zBqzlmPoOg6TMZ7mGhSOc9PH00YLultnJPI5aRBmuYliQDMticS2rykiYrUTeVsQJpysCLFLE3jqpuIKZiJYoYq/GKmEidrGOcXEWMW+8rUavKazUNKxSYxTUawtUTWLR1FQg0rGtU0J5wpkGBDC55zyFs9R6KFMm9hxhvAYci2reXjlAvqUcITwqLsGEILGrQ1rpItA+cZS2ix3tzm0r4HVTOjY8pawOUXp6XN2tvHSNejx+hSIvNp2OwnerpPESfNux7IxenuOYlfInbDVd7iJIaPweqdm6ZVdB5e7fpDpW8D5ZiQ6B039IUpVb8res6IaRCe2ZrEYN1r1GZiykKEvbwgai1rdSR8hK+JUsrAcwbeo3/AJQ7mJG+1upgOrh2qA6WtuNxvaxB38ozBEH5fvdutvookuIxipxIva9ucIZZlS00Gpi/S4sPiOczHb6mUenWvZCO7e3AcWQ7f7vhBJtR0NBKU6Z2t2gsbKd/KUKuasTYNv6/rIsryzvzubJ/iHE/u/rDFfsfR1gB6gBtzU8/Sc/05S2zr+pjg6QEp1WqtoqGmFG4Zk1gMOG3XzlbA4/E94PwQgDWL2QDba4a1yPSaCr2MpKzKtSqDxB8NiCOagCD8ZkjUKbOKmtksSbEWVja43O4NoJYnQ8eoi9FDtDVNevpXfcC4vbYWJ+kyuW1q5xiU3pNTpMzLdqfkbFiedxwnomT5S9JVrKNT7nSeR2K+XreEcJkKGr3lZjUZyWtf8MMT7thwiznHBDulwBOE3Vu/j9/fYr4LBIQuuqyncafHyvbgegEM9mCO9rqABpFENuSSxVm3JN/zCMwtSipqUyqf4lJC7i/C/UWI+U62c06f+Eb3sBxI4XPTjOTH/6mFNKn++WzZoZ8ipydfkI9pjbCVz/0n/hMZ2HxoGX4cc+7/wDsYFzDtQlVHpOngdSrWNjuOXTYzuSZjSUUMPRRjYaV3BNr3Jbra9/SXn12Ob7cb3+Dm/iZUu5rRu6bayPKxMx3tBx51JSB4+Jh5DYD53PwmgGNFFG1ceM81z/NBVqvU5bAX6Dj9bz1Ohj3yUvY4cs6VFPGYkIpJMwGcY01GO+0sZ/nJZtI4CAqtaduWd6IRRJSqbyZnvKtMx6tIphO1RKhaxlmo0qVTBIeJbWrcSpU2MbSexj60F2g1THLVilXVFB3DdqNEwLEDrNjkeHsgmMwVbf0mnyrFVCQALL1nmQO+S1ZqMKukG5g3C5mWraQPCDG4PvNTAtcGEMHlyob8zKuJOMkk7QVeq9vAbSTCisCD3nqJVWmSRva0LIBaBIKlQULEgWO/ODcyy5a35LMOBEpYbEt3jDkIXyzMgzlTxELVmiqtoq9mqjUKmlrgTbYiuDT1KwHQnhAWPw42cfGFcJQ1UwF4Q4rT7QZGmrBVSsVpgvUWoSSdQ3BFzYfDYRuExQ02vzMmzPJ6re4BtyuBM+lQIaiM+lqY1sLqbBePPf0tOjtb4EStBzB1rgqfyn6HcfzlXOaSVabI9rGxHkQbg/OVsXStqKk3I2tw9f5yKlT4A3PrvF+AfJFgqOkm3C+3pCeIc3Rh5fQyFUtJK+6DygMT5mLMrcuBgrNaxpU2rEXREYvwvYAngeN94cqLqUdCN/jwmY7eU6gwFUIbEjSdgbq11I34e8N4OWbgw+G7f1WqkPTNJd9JVixXpr/AMXw4dJ6XkCriKa1Tiqb6gCCPCy9RquDPBsaGRVS+qw3PX49JuOxWaJTwdNr2q0XYA8iGqllU8Rwa29vWPwtgaTerN1nfZNnYvRxehrHZlVlJPG9rcecwOYmvRcrV4hiNSqQpsbXUHiOc9Jq56yNoanTvfzU+pHyhN6HfoVIpMhHS/3MjLpenyWu1CLq80Hyzz1cookXbEOt/wArLpI4c7WPwJmp7LUFo+GnTuW2NUFnax+Fh52krdlagRFTEuCgAJ/5gAA8drdL3FobymyKqOVBUcQbgi5sd4q6bHF6iir6mc405MBdrsVUooV0XVgRq5g+flPO8V7hvNv29zUvppbDe5FunA6r2ImBzOrZTPW6LCseI4Mv3GEzU/iGUjHYqrqdj5xklN22USpHVePV5FedUxQ0T6pDUnZG8zCkRmShriRNOI0RMZoRE5HmKYJo8mo3O81uH4WWZzLF3hvIarVKrLbYThgdUrYfy6kTClMHVa23Wcwmkc49saoNr7xyQq1QKbRUMSSYKxuNF7mWcO3AzDBh7Ag9ZVwwZMTqA2YbymMQKj2B92GExCoupuULH3HRosLUuLNO4PGdwWFRgE4g3t8INy/FhwDyPCEf2anVDJVUMjCxH6TJW0T4tHnHan2i1GdqdI0tQY7N33u8jdag+0yOG7c1TqVkoK5NgRRDA+pqFufWc9pXYurl+IDrqqUKh/Cci5U/8trcxyPMTGilUvq0N191v0nWptEXGz6ecA2PIgEfFQZE1O0dhqemjSBvcU0G/kgETGSfI6Ii8kQ3FhK9VjeM7wjygCFsO4CWPIfaVM3wvfUnphgNYFmIuAykMoYdLgA23sdpmu1uPf8AYMQ9N2VlFwyncWKm9/nPLMt7UYsd4Hr1H/DJW5J0kEC9hxG9/hAkwM11XLqbF0ICup0utw2k2vy4gixBHEH1AzmcZT3N+6qEA8SPCfvvM7/bFSlUFRKjGqbmox4Pc30sOY/oTS0MUmKTvVYhgR3qE30+Y6rHe9MC1s02b9skbQKl6ToLsr7eLyIBDC++1vSHkzYdxRqrdtdNTcXHFeP0nnOeYUVH1DhzPqeklbPamGppRIFSkANP5XUHe3QjfnwnPmjJNyi9jQcJUmerZLXo1/exDioL3pEqm45ANx+cOYDD0kDlrC5D+OoNjpVbLc+HZRtwuT1mDweJoYrBLiaqWIQ3N9L3VittQ43tw8xBfe0NAtTcPbxFqlSwPRQbX5QRlJTUfJ3yfQdt7T9qT/07X/UEe0tdWxD6WDKtgpBuOHWZDtJitNMwiKu31mV7VYjYDqZ7r9GP+jwvulozimPBkaR089HTR0xAzkUxiUGNcRqmOJhAQtGx7yNojHQ7VFGRTWajcZfT4CajK6AohmPEzLV9SlbdYQrYxywUHa285UdEuLJMLmFRcQwPuHhCNdvHqvKrKqLqaD0zEO9l3F5uDP1bNFSQNuZdxCkpZekHNiERLk22jsPjyw24Qi0+QnkuDKob8TzhfDYQMhVt4JwOOYGxG0M0qu4tzmoLk7st0VULZPywjhsUOF9xxgXAYm7uvSLCYRkZnLE6j8hABrmzW0Wo4tCjqrqDwYBgGHPfnBFXLUpPoFKmNxYhEFweewk2V1RTsqy1mVdSyM22k7ny/wC9peEvcnL4IcxYA2JtKdRY3NqgqHwENtwBBO3lxgauzBbXI36nhGYEXMViFX3iB9TA2NxxbYbD7+sqYmpvvxnEXVtBQbFmKl8FikHE0mtfrpYj7TyjIq34pPWk4+09coLdatPm9JgB1Ok7fUzxfKh+IARsAdV/y8rnpY29N4LMXO0mTCkErUyWpVFHHjTe1yjeXMHp5iCsBjXouKlM2YfIjmCOYPSeh5Vh1qo1Gou1tJHPbn6iYrtHkb4SppbdTujcmH6zMyNPltVMWpZG0MN2pWvY/wCXfcdJXzOj35ATbSLWIN7KLbjkfjMlgcU1J1dSQQeXTp6TYUsyo4hdfiSpezAW3PUjoYmR+h7JuPbuJbpYmpRpd2r6U95zx08yBta994Pw+atWq7XKj8xvvO4kEggm63vx225HylfK8YajOdgqmygc78z1kuiV5U2SlbTbDj1tpjs+xGupbpNRin0oT5TE13uxPnPY6mVRoXErY1Y6NWdM5DoOxRCKYAo4Rs6JjDXjDHtIzFYyGxRRRRj0L9oXST0iy5NzUaZrD12YsBNLl4L09MgVaaLOMHfAgHaR5ZlQpbnjJ6CCktjxletjrEX4GAaLdNI7mdBqhHSE8CulbDlK7YgBfKT4WsCLiGgX4K2Ezs98yMOHCbjLqwZAwmSGBRjqtvCuRYxVfTcWm2GdP7Q9Tp6XL+Uuq+pekD5hmBpOoK7NwPnG4/NGRSyrcAcILF7JOvkO0ASLA79ZLmz2S/PYQVkuNLprYWlmohqK9tyRcfDpKR5RNowHb++hKikqwJGoGxtsdiOG4map9r8cgVVxVSyi3j01dXiJuTUBPAgf7RD/AG4qXpAdS32mCDSzJhw9r8aNzX1eTUqJH0SW6HtBqDerhqLeaF6X0uw+kyrPKeIbaKwo1uae0KrUQpRpLQLCzOGLvY8QrEAL6gX84F7NUru55Cnb5sP0MCiaXsovgrHn4R94o4eyrEFbcyLAG/vLyv5i1vS3nNZiMsp4/C6HFiQdB5qwJFwfhMvlnKbTKzZQB/W8LTAeIZvllTDVWpVBYrz5EciJXpVWXdSQfKe2dsezaY2ltYVUF0br/lPlPFMRRamWRwVZSQQeREH5CS1Mwdk0liRqv8xwPyELdlqYJJ6TPTSdmlsCZbporv0RzaiXs9rWp2mRvDfaHE3NoClepl6qBhWrJFnYwGOvIWUocDFeNvFeazUOvOXnLxXmAdJkbR0aYGFHIpydi2Ma/LaC7kQjSq6ASIopEqpMip1i5uTKPaJ9IW3WKKAeGmEcrq60F+kJ0QFFhFFChXyEKbXXaA6+BqCoHR7bxRTNWNCTjbRrMNjWq6UZeA4+cKK4Vd/jFFMhWuB9WrZbDnLGUYojTtvqsIooRErMR7UcN3ZsOBYkejKT9xPNGaKKXIshLyGsYoorHRGJtMkw/dqy8+7pk+p1E/15RRQBCOXtvNhgH2EUUYDCIxSra5tfyMyftG7LCshxFMAVEHjGw1r+sUUUx5LPQckym1C/O0UUaM3F6HUFJbMdnIIqEGUBFFDNtytiJJKkdnbzsUBjl528UUJjl528UUwDl4oooDDYoooAn//Z" alt="Our story">
+    <div class="content">
+      <h2>Our Story</h2>
+      <p>We began with a small kitchen, a few organic ingredients, and a dream to change the way people eat. Today, Flavour Fusion is a movement to inspire conscious choices through food and community.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQSPOPMD-pj5_ZTjPI4eLLsERd-tOx-9efQ&s" alt="Mission">
+    <div class="content">
+      <h2>Our Mission</h2>
+      <p>We aim to bring clean, natural, and nourishing food options to every household. Through transparency and innovation, we empower people to live healthier lives with better food decisions.</p>
+    </div>
+  </div>
+
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <img src="./img5/kiran.jpeg" alt="kiran">
+        <h4>kiran</h4>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="member">
+        <img src="./img5/danu.jpeg" alt="dhanush">
+        <h4>dhanush</h4>
+        <p>Lead Developer</p>
+      </div>
+      <div class="member">
+        <img src="./img5/srujan.jpeg" alt="srujan">
+        <h4>srujan</h4>
+        <p>Head Chef</p>
+      </div>
+      <div class="member">
+        <img src="./img5/raul.jpeg" alt="rahul">
+        <h4>rahul</h4>
+        <p>Nutritionist</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <h2>Our Core Values</h2>
+    <ul>
+      <li><strong>Transparency:</strong> We believe in honest sourcing and clear labels.</li>
+      <li><strong>Sustainability:</strong> Our products support eco-friendly farming and fair trade.</li>
+      <li><strong>Health First:</strong> Everything we do starts with your well-being.</li>
+      <li><strong>Innovation:</strong> We mix tradition and creativity in every recipe and product.</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="review">
+      <p>“Flavour Fusion helped me transition to organic food without compromising on taste. Their recipes are a game changer!”</p>
+      <h4>– Priya Mehra</h4>
+    </div>
+    <div class="review">
+      <p>“I love their dedication to clean ingredients. I’ve never felt better about what I’m putting on my plate.”</p>
+      <h4>– Daniel Cooper</h4>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Join the Fusion!</h2>
+    <p>Be part of our mission to create a healthier world through delicious, clean, and conscious food.</p>
+    <a href="contact.html">Get In Touch</a>
+  </section>
+
+  <footer>
+    © 2025 Flavour Fusion. All rights reserved.
+  </footer>
+
+</body>
+</html>

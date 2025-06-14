@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breakfast | Flavour Fusion</title>
+  <link rel="stylesheet" href="./css/style2.css" />
+  <link rel="icon" href="./img/logo.png" type="image/png" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+          <div style="display: flex; align-items: center;">
+            <img src="./img/logo.png" alt="Logo" class="logo-img">
+            <div class="brand">Flavour Fusion</div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipies.html">Recipes</a></li>
+            <li><a href="products1.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" id="searchBar" placeholder="Search recipes..." />
+    </section>
+    <div id="noResultsMessage" style="display: none; color: red; font-weight: bold; margin-top: 10px;">
+  No recipes found.
+</div>
+<section class="saved-section" style="margin: 10px 0;float: right;">
+  <button id="showSavedBtn" style="float: right;">Show Saved Recipes</button>
+  <button id="showAllBtn" style="display:none;float: right;">Show All Recipes</button>
+  <button id="removeSavedBtn" style="display:none; margin-left: 10px; float: right;">Remove Saved Recipes</button>
+</section>
+
+
+
+    <section class="intro-section">
+      <h1>Breakfast</h1>
+      <p class="intro-text">
+        Imagine your morning as a fresh start. An organic egg, golden and bright, sits like a sunrise,
+        waking you up with energy. A pile of spinach, green and bold, feels like nature’s strength in every leaf.
+        Whole-grain bread, rugged and real, holds steady like a promise. Cherry tomatoes, small and red, spark joy like
+        little bursts of light. It’s pure and simple—like the earth saying, “Rise strong.”
+      </p>
+    </section>
+
+    <!-- Recipe Cards -->
+    <section class="recipes">
+      <!-- Recipe 1 -->
+      <article class="recipe-card" data-id="1">
+        <h2>1. Organic Avocado Toast with Cherry Tomatoes 🌱🍅</h2>
+        <div class="recipe-content">
+          <img src="./img1/toast.jpg" alt="Avocado Toast" />
+          <p class="description">
+            Like a golden raft floating on an emerald sea,
+                Each bite is a<br> whisper of creamy dreams and crunchy delight.
+                The cherry tomatoes<br> burst like tiny firecrackers of flavor,
+                While a drizzle of lemon adds the sparkle of morning sunlight.
+          </p>
+        </div>
+        <div class="recipe-details">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>1 slice whole-grain organic bread</li>
+              <li>½ organic avocado</li>
+              <li>5 cherry tomatoes</li>
+              <li>1 tsp lemon juice</li>
+              <li>Salt & pepper to taste</li>
+              <li>Optional: Red pepper flakes</li>
+            </ul>
+          </div>
+          <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Toast the bread until golden.</li>
+              <li>Mash avocado with lemon juice, salt, and pepper.</li>
+              <li>Spread on toast and top with tomatoes and seasonings.</li>
+            </ol>
+          </div>
+        </div>
+        <button class="save-btn" onclick="saveRecipe(1)">⭐ Save Recipe</button>
+        
+
+      </article>
+
+      <!-- Recipe 2 -->
+      <article class="recipe-card" data-id="2">
+        <h2>2. Organic Banana Oat Pancakes 🍌🥞</h2>
+        <div class="recipe-content">
+          <img src="./img1/pancake.jpg" alt="Banana Pancakes" />
+          <p class="description">
+            Like golden medallions forged in the morning sun,<br> these oat pancakes cradle the sweetness of ripe bananas, each bite a whisper <br>of cinnamon-dusted dreams, fluffy as a cloud yet hearty as a warm embrace.
+          </p>
+        </div>
+        <div class="recipe-details">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>1 organic banana</li>
+              <li>½ cup oats</li>
+              <li>1 egg</li>
+              <li>¼ tsp cinnamon</li>
+              <li>½ tsp baking powder</li>
+              <li>1 tbsp honey (optional)</li>
+              <li>½ tsp vanilla</li>
+            </ul>
+          </div>
+          <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Mash banana and mix with other ingredients.</li>
+              <li>Cook on a greased pan for 2 min per side.</li>
+              <li>Serve with berries or honey.</li>
+            </ol>
+          </div>
+        </div>
+        <button class="save-btn" onclick="saveRecipe(2)">⭐ Save Recipe</button>
+        
+
+      </article>
+
+      <!-- Recipe 3 -->
+      <article class="recipe-card">
+        <h2>3. Green Detox Smoothie 🥬🍍</h2>
+        <div class="recipe-content">
+          <img src="./img1/green-Picsart-AiImageEnhancer.jpg" alt="Green Smoothie" />
+          <p class="description">
+            A potion of life, blended with the essence of nature’s<br> vitality—deep green from the earth’s embrace, vibrant yellow from the sun’s<br> golden touch, and a kiss of coconut water like a fresh morning dew.
+          </p>
+        </div>
+        <div class="recipe-details">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>1 cup spinach</li>
+              <li>½ cup kale</li>
+              <li>1 green apple</li>
+              <li>½ cucumber</li>
+              <li>1 banana</li>
+              <li>½ lemon (juiced)</li>
+              <li>1 tsp grated ginger</li>
+              <li>1 cup coconut water</li>
+              <li>Ice cubes</li>
+            </ul>
+          </div>
+          <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Blend all ingredients until smooth.</li>
+              <li>Adjust consistency with more water if needed.</li>
+              <li>Serve immediately.</li>
+            </ol>
+          </div>
+        </div>
+        <button class="save-btn" onclick="saveRecipe(3)">⭐ Save Recipe</button>
+      </article>
+
+      <!-- Recipe 4 -->
+      <article class="recipe-card">
+        <h2>4. Whole Wheat Waffles with Maple Syrup🧇</h2>
+        <div class="recipe-content">
+          <img src="./img1/waffle.jp.jpg" alt="Green Smoothie" />
+          <p class="description">
+            Like warm hugs in crisp form, these waffles carry the golden sunlight of a slow morning.”
+          </p>
+        </div>
+        <div class="recipe-details">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>1 cup organic whole wheat flour</li>
+              <li>1 tsp baking powder</li>
+              <li>1 tbsp organic coconut sugar or raw cane sugar</li>
+              <li>1 free-range organic egg</li>
+              <li>1 cup organic milk (or oat/almond milk)</li>
+              <li>2 tbsp melted organic coconut oil or butter</li>
+              <li>1 tsp vanilla extract</li>
+              <li>Pure maple syrup, for serving</li>
+              <li>Fresh fruit (bananas, berries) for topping</li>
+            </ul>
+          </div>
+          <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Preheat your waffle maker.</li>
+              <li>In a large bowl, whisk together the flour, baking powder, and sugar.</li>
+              <li>In another bowl, mix the egg, milk, melted coconut oil, and vanilla extract.</li>
+              <li>Pour the wet ingredients into the dry ingredients and stir until just combined.</li>
+              <li>Grease the waffle iron and pour in the batter. Cook according to your waffle maker’s instructions until golden brown.</li>
+              <li>Serve warm with fresh fruit and a drizzle of maple syrup.</li>
+            </ol>
+          </div>
+        </div>
+        <button class="save-btn" onclick="saveRecipe(4)">⭐ Save Recipe</button>
+      </article>
+
+       <!-- Recipe 5 -->
+       <article class="recipe-card">
+        <h2>5.Matcha & Oat Energy Bowl🍵</h2>
+        <div class="recipe-content">
+          <img src="./img1/matca.jp.webp" alt="Green Smoothie" />
+          <p class="description">
+            A calm green tide in a bowl, this breakfast is balance — a silent promise of focus and grace.
+          </p>
+        </div>
+        <div class="recipe-details">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>½ cup organic rolled oats</li>
+              <li>1 cup organic coconut milk or almond milk</li>
+              <li>1 tsp organic matcha green tea powder</li>
+              <li>1 tbsp chia seeds</li>
+              <li>1 tsp maple syrup or agave</li>
+              <li>Toppings: banana slices, coconut flakes, hemp seeds, or granola</li>
+              
+            </ul>
+          </div>
+          <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              <li>In a small saucepan, heat the milk until warm (don’t boil).</li>
+              <li>Stir in oats and cook on low for 5–7 minutes, stirring occasionally.</li>
+              <li>In a small bowl, mix the matcha powder with 1 tbsp hot water to make a smooth paste.</li>
+              <li>Stir matcha and maple syrup into the cooked oats.</li>
+              <li>GTransfer to a bowl and top with banana slices, coconut flakes, and hemp seeds.</li>
+              
+            </ol>
+          </div>
+        </div>
+        <button class="save-btn" onclick="saveRecipe(1)">⭐ Save Recipe</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at info@flavourfusion.com | Follow us on social media</p>
+  </footer>
+
+  <script>
+  const searchInput = document.getElementById("searchBar");
+const recipeCards = document.querySelectorAll(".recipe-card");
+const noResultsMessage = document.getElementById("noResultsMessage");
+const showSavedBtn = document.getElementById("showSavedBtn");
+const showAllBtn = document.getElementById("showAllBtn");
+const removeSavedBtn = document.getElementById("removeSavedBtn");
+
+// Search recipes
+searchInput.addEventListener("input", () => {
+  const keyword = searchInput.value.toLowerCase();
+  let found = false;
+
+  recipeCards.forEach((card) => {
+    const match = card.innerText.toLowerCase().includes(keyword);
+    card.style.display = match ? "block" : "none";
+    if (match) found = true;
+  });
+
+  noResultsMessage.style.display = found ? "none" : "block";
+});
+
+// Save recipe without login - save globally
+function saveRecipe(id) {
+  let saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  if (!saved.includes(id)) {
+    saved.push(id);
+    localStorage.setItem("savedRecipes", JSON.stringify(saved));
+    alert("Recipe saved!");
+    updateSaveRemoveButtons();
+  } else {
+    alert("Recipe already saved.");
+  }
+}
+
+// Show only saved recipes
+function showSavedRecipes() {
+  const saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  if (saved.length === 0) {
+    alert("No saved recipes yet!");
+    return;
+  }
+  recipeCards.forEach(card => {
+    const id = parseInt(card.dataset.id);
+    card.style.display = saved.includes(id) ? "block" : "none";
+  });
+  noResultsMessage.style.display = "none";
+  showSavedBtn.style.display = "none";
+  showAllBtn.style.display = "inline-block";
+  removeSavedBtn.style.display = "inline-block";
+}
+
+// Show all recipes
+function showAllRecipes() {
+  recipeCards.forEach(card => card.style.display = "block");
+  noResultsMessage.style.display = "none";
+  showSavedBtn.style.display = "inline-block";
+  showAllBtn.style.display = "none";
+  // Show remove button only if there are saved recipes
+  const saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  removeSavedBtn.style.display = saved.length > 0 ? "inline-block" : "none";
+}
+
+// Update Save and Remove buttons based on saved status
+function updateSaveRemoveButtons() {
+  const saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  recipeCards.forEach(card => {
+    const id = parseInt(card.dataset.id);
+    const saveBtn = card.querySelector(".save-btn");
+    let removeBtn = card.querySelector(".remove-btn");
+
+    // Create remove button if it doesn't exist
+    if (!removeBtn) {
+      removeBtn = document.createElement("button");
+      removeBtn.classList.add("remove-btn");
+      removeBtn.textContent = "❌ Remove";
+      removeBtn.style.display = "none";
+      removeBtn.addEventListener("click", () => removeRecipe(id));
+      card.appendChild(removeBtn);
+    }
+
+    if (saved.includes(id)) {
+      saveBtn.style.display = "none";
+      removeBtn.style.display = "inline-block";
+    } else {
+      saveBtn.style.display = "inline-block";
+      saveBtn.disabled = false;
+      saveBtn.style.opacity = "1";
+      saveBtn.style.cursor = "pointer";
+      saveBtn.textContent = "⭐ Save Recipe";
+      removeBtn.style.display = "none";
+    }
+  });
+
+  removeSavedBtn.style.display = saved.length > 0 ? "inline-block" : "none";
+}
+
+// Remove one recipe from saved
+function removeRecipe(id) {
+  let saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  saved = saved.filter(savedId => savedId !== id);
+  localStorage.setItem("savedRecipes", JSON.stringify(saved));
+  alert("Recipe removed from saved!");
+  updateSaveRemoveButtons();
+  showAllRecipes();
+}
+
+// Remove all saved recipes at once
+function removeAllSavedRecipes() {
+  if (confirm("Are you sure you want to remove all saved recipes?")) {
+    localStorage.removeItem("savedRecipes");
+    alert("All saved recipes removed!");
+    updateSaveRemoveButtons();
+    showAllRecipes();
+  }
+}
+
+// Button event listeners
+showSavedBtn.addEventListener("click", showSavedRecipes);
+showAllBtn.addEventListener("click", showAllRecipes);
+removeSavedBtn.addEventListener("click", removeAllSavedRecipes);
+
+// On page load, update save/remove buttons
+window.onload = () => {
+  updateSaveRemoveButtons();
+  // Also set the removeSavedBtn visibility properly on load
+  const saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  removeSavedBtn.style.display = saved.length > 0 ? "inline-block" : "none";
+};
+
+
+  </script>
+</body>
+
+
+</html>
