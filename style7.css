@@ -1,0 +1,161 @@
+/* Base Reset & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff9f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Navigation */
+header {
+  background: #3a7d44;
+  padding: 15px 30px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+nav a:hover,
+nav a.active {
+  background: #6abf69;
+}
+
+/* Hero */
+#hero {
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+#hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(58,125,68,0.6);
+  z-index: 0;
+}
+#hero h1,
+#hero p {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+#hero p {
+  font-size: 1.1rem;
+}
+
+/* Section Layout */
+section {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+h2 {
+  color: #3a7d44;
+  border-bottom: 2px solid #6abf69;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+}
+
+/* Our Story */
+#our-story {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+#our-story img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#our-story div {
+  flex: 1;
+}
+
+/* Team Section */
+#team .team-members {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-member {
+  background: #e9f1ea;
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.team-member:hover {
+  transform: translateY(-5px);
+}
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #6abf69;
+}
+.team-member h3 {
+  color: #2d5b2c;
+  margin-bottom: 6px;
+}
+.team-member p {
+  color: #4a7540;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Social Proof */
+#social-proof blockquote {
+  background: #f0f8f3;
+  border-left: 4px solid #6abf69;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+#social-proof footer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #3a7d44;
+}
+
+/* Footer */
+footer {
+  background: #3a7d44;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  #our-story {
+    flex-direction: column;
+  }
+  .team-member {
+    width: 100%;
+    max-width: 300px;
+  }
+}

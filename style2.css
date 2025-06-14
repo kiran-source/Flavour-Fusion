@@ -1,0 +1,256 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    margin-right: 10px;
+  }
+  
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin-left: 20px;
+  }
+  
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-list a:hover {
+    color: #dfffdc;
+  }
+  
+  .search-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .search-section input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+  }
+  
+  .intro-section {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .intro-text {
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  .recipes {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .recipe-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  
+  .recipe-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-content {
+    text-align: center;
+  }
+  
+  .recipe-content img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .recipe-details {
+      flex-direction: row;
+    }
+  }
+  
+  .ingredients,
+  .instructions {
+    flex: 1;
+    background-color: #e7fbe9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .ingredients h3,
+  .instructions h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .ingredients ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ingredients ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .instructions ol {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  footer {
+    background: #4CAF50;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  /* General button style */
+button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 100, 0, 0.15);
+  user-select: none;
+}
+
+/* Save Recipe button (star) - warm green */
+.save-btn {
+  background-color: #6dbf4a; /* fresh leafy green */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(109, 191, 74, 0.4);
+}
+
+.save-btn:hover:not(:disabled) {
+  background-color: #5aa837;
+  box-shadow: 0 6px 12px rgba(90, 168, 55, 0.5);
+}
+
+.save-btn:disabled {
+  background-color: #a1d68c;
+  color: #f0f5ea;
+  cursor: default;
+  box-shadow: none;
+}
+
+/* Remove Recipe button (cross) - soft warm red */
+.remove-btn {
+  background-color: #e3645a; /* soft tomato red */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(227, 100, 90, 0.4);
+}
+
+.remove-btn:hover {
+  background-color: #cc5048;
+  box-shadow: 0 6px 12px rgba(204, 80, 72, 0.5);
+}
+
+/* Show Saved / Show All / Remove Saved buttons - subtle yellow / gold */
+#showSavedBtn, #showAllBtn, #removeSavedBtn {
+  background-color: #f4d35e; /* warm golden yellow */
+  color: #4a3c1b;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(244, 211, 94, 0.4);
+  border: 2px solid #e1c94b;
+  margin-right: 8px;
+  user-select: none;
+}
+
+#showSavedBtn:hover, #showAllBtn:hover, #removeSavedBtn:hover {
+  background-color: #e1c94b;
+  box-shadow: 0 6px 14px rgba(225, 201, 75, 0.6);
+}
+
+/* Disabled button style for consistency */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Optional: spacing between buttons */
+.saved-section button {
+  margin-bottom: 8px;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+  

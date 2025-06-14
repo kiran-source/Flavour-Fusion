@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    margin-right: 10px;
+  }
+  
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin-left: 20px;
+  }
+  
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-list a:hover {
+    color: #dfffdc;
+  }
+  
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4CAF50;
+    color: white;
+}
+
+nav .logo {
+    text-align: left;
+    display: inline;
+}
+
+body #about p,
+h2 {
+    color: black;
+}
+
+header .list {
+    padding-left: 700px;
+}
+
+.logo {
+    width: 50px;
+    /* Adjust based on your design */
+    margin-right: 20px;
+    /* Space between logo and text */
+    opacity: 0.8;
+    border-radius: 12px;
+}
+
+
+section {
+    padding-top: 100px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.img {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.recipies {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    padding-top: 100px;
+}
+
+.recipies img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.recipies a{
+    text-decoration: none;
+    color: black;
+}
+
+.box  h3 a{
+    color:white;
+    text-decoration:none;
+}
+.box a:hover{
+    color:grey;
+    font:bold;
+}
+
+.container .box img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s 
+}
+.container img:hover {
+    transform: translateY(-20px); /* Move the image up */
+    filter: brightness(80%); /* Darken the image */
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    
+    
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    
+}
+
+.image-text {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+#boxes1 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recipe-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.recipe-section h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.recipe-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+}
+
+
